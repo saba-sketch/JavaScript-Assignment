@@ -2,7 +2,8 @@
 //Assignment1
 
 // Variable and Concatenation
-// Q1: Write a program that asks the user for their first and last name. - Combine both names and display "Your full name is: [Full Name]".    
+// Q1: Write a program that asks the user for their first and last name. - Combine both names 
+// and display "Your full name is: [Full Name]".    
 
 let firstName = prompt("Enter your first name:")
 let lastName = prompt("Enter your last name:")
@@ -10,7 +11,8 @@ let fullName = firstName + " " + lastName
 alert("Your full name is: " + fullName)                             
 console.log("Your full name is: " + fullName)
 
-// Q2: Write a program that asks the user for their first name, last name, and age.- Display a message like: "Hello [first name] [last name], you are [age] years old!"
+// Q2: Write a program that asks the user for their first name, last name, and age.- Display a 
+// message like: "Hello [first name] [last name], you are [age] years old!"
 
 let firstName1 = prompt("Enter your first name")
 let lastName1 = prompt("Enter your last name")
@@ -18,7 +20,9 @@ let age = prompt("Enter your age")
 console.log("Hello" + firstName1 + lastName1 + "you are" + age + "years old!")
 
 // 2. Handling Ambiguity in Math Expressions
-// Q3: Consider the following math expression:   let result = 5 + 2 * 3;  - Predict what the result will be and write it down. - Modify the expression by using parentheses to change the order of operations so that addition happens first.
+// Q3: Consider the following math expression:   let result = 5 + 2 * 3;  - Predict what 
+// the result will be and write it down. - Modify the expression by using parentheses to 
+// change the order of operations so that addition happens first.
 // - Display both results in the console.
 
 let result1 = 5 + 2 * 3
@@ -27,7 +31,8 @@ console.log("without parenthesis:" + result1)
 console.log("with parenthesis:" + result2)
 
 
-// Q4: Given the expression below: let result = 10 / 2 + 4 * 3 - 5; - Predict the result. - Modify it using parentheses to change the order of operations.
+// Q4: Given the expression below: let result = 10 / 2 + 4 * 3 - 5; - Predict the result. 
+// - Modify it using parentheses to change the order of operations.
 // - Display both results in the console.
 
 
@@ -37,7 +42,9 @@ console.log("without parentheses: " + result1)
 console.log("with parentheses: " + result2)
 
 // 3. If-Else-Else If
-// Q5: Write a program that asks the user to enter a number.- If the number is greater than 0, display "Positive Number".- If the number is less than 0, display "Negative Number".- If the number is 0, display "Zero".
+// Q5: Write a program that asks the user to enter a number.- If the number is greater 
+// than 0, display "Positive Number".- If the number is less than 0, display "Negative Number".
+// - If the number is 0, display "Zero".
 
 let num = prompt("Enter a number:")
 if (num > 0) {
@@ -49,7 +56,8 @@ if (num > 0) {
 }
 
 
-// Q6: Write a program that asks the user to enter their age. - If the age is below 13, display "You are a child."  - If the age is between 13 and 19, display "You are a teenager." 
+// Q6: Write a program that asks the user to enter their age. - If the age is below 13, 
+// display "You are a child."  - If the age is between 13 and 19, display "You are a teenager." 
 // - If the age is 20 or above, display "You are an adult."
 
 let age3 = prompt("Enter your age:")
@@ -61,7 +69,8 @@ if (age3 < 13) {
     console.log("You are an adult.")
 }
 
-// Q7: Write a program that asks the user to enter a number. - If the number is even, display "The number is even."  - If the number is odd, display "The number is odd."
+// Q7: Write a program that asks the user to enter a number. - If the number is even, display 
+// "The number is even."  - If the number is odd, display "The number is odd."
 
 let num1 = prompt("Enter a number:")
 if (num1%2 == 0) {
@@ -72,8 +81,11 @@ if (num1%2 == 0) {
 }
 
 
-// Q8: Write a program that asks the user to enter a number. - If the number is divisible by both 3 and 5, display "Divisible by both 3 and 5".
-//  - If the number is only divisible by 3, display "Divisible by 3".  - If the number is only divisible by 5, display "Divisible by 5".  - If the number is divisible by neither, display "Divisible by neither".
+// Q8: Write a program that asks the user to enter a number. - If the number is divisible by both 
+// 3 and 5, display "Divisible by both 3 and 5".
+//  - If the number is only divisible by 3, display "Divisible by 3".  - If the number is only 
+// divisible by 5, display "Divisible by 5".  - If the number is divisible by neither, display 
+// "Divisible by neither".
 
 let num2 = prompt("Enter a number:")
 if (num2 % 3 === 0 && num2 % 5 === 0) {
@@ -94,7 +106,9 @@ if (num2 % 3 === 0 && num2 % 5 === 0) {
 // 1. Nested If
 // Write a JavaScript program that:
 // 1. Asks the user for their age.
-// 2. Uses nested if-else to check: - If they are 18 or older, check further: - If they have a driving license, show 'You can drive.'   - Otherwise, show 'You need a license to drive.'   - If they are younger than 18, show 'You are too young to drive.'
+// 2. Uses nested if-else to check: - If they are 18 or older, check further: 
+// - If they have a driving license, show 'You can drive.'   - Otherwise, show 'You need a 
+// license to drive.'   - If they are younger than 18, show 'You are too young to drive.'
 
 let age4 = prompt("Enter your age:")
 if (age4 >= 18) {
@@ -116,8 +130,12 @@ if (age4 >= 18) {
 // Write a JavaScript program that:
 // 1. Asks the user to enter two numbers using prompt().
 // 2. Asks the user to enter a mathematical operator (+, -, *, /).
-// 3. Uses nested if-else statements to perform the corresponding mathematical operation:  - If the operator is '+', add the numbers.   - If the operator is '-', subtract the numbers.  - If the operator is '*', multiply the numbers.  - If the operator is '/', check further:    - If the second number is 0, display 'Error: Division by zero is not allowed.'
-// (Input: num1 = 20, num2 = 0, operator =   Output: 'Error: Division by zero is not allowed.')   - Otherwise, perform the division and show the result.
+// 3. Uses nested if-else statements to perform the corresponding mathematical operation: 
+//  - If the operator is '+', add the numbers.   - If the operator is '-', subtract the numbers. 
+//  - If the operator is '*', multiply the numbers.  - If the operator is '/', check further:   
+//  - If the second number is 0, display 'Error: Division by zero is not allowed.'
+// (Input: num1 = 20, num2 = 0, operator =   Output: 'Error: Division by zero is not allowed.')   
+// - Otherwise, perform the division and show the result.
 // Bonus 4. If the user enters an invalid operator, display 'Invalid operator! Please enter +, -, *, or /.'
 
 let num3 = prompt("Enter the first number:")
@@ -142,7 +160,8 @@ if (operator === "+") {
 
 
 // 3. Array Declaration & Access
-// Write a JavaScript program that:  1. Declares an array with five different colors.  2. Asks the user for an index number (0-4).  3. Displays the color present at that index.
+// Write a JavaScript program that:  1. Declares an array with five different colors.  
+// 2. Asks the user for an index number (0-4).  3. Displays the color present at that index.
 
 let colors6 = ["Red", "Blue", "Green", "Yellow", "Purple"]
 let index1 = prompt("Enter an index number (0-4):")
@@ -154,7 +173,8 @@ if (index1 >= 0 && index1 < colors.length) {
 
 
 // 4)Array Operations (Push & Pop)
-// 1) Create an array with the values [1, 2, 3, 4]. -Use push() to add the number 5 at the end of the array. -Use pop() to remove the last element. -Print the array after each step.
+// 1) Create an array with the values [1, 2, 3, 4]. -Use push() to add the number 5 at the end of
+//  the array. -Use pop() to remove the last element. -Print the array after each step.
 
 let numbers = [1, 2, 3, 4]
 console.log("Initial array:" + numbers)
